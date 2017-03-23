@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+	<title>The Frick Collection</title>
+	
+<style type="text/css">
+	 
+	header{
+	 	font-size: 100px;
+	 	font-weight: bold;
+	 	font-family: 'Libre Baskerville', serif;
+	 	background-color: #009999;
+	 	text-shadow: 2px 2px 3px rgba(0, 0, 0, .8);
+        padding: 0; margin: 0;
+	 }
+	body{
+		margin: 0; padding: 0;
+	}
+	nav{
+	    width: 100%; height: 100px;
+		background-color:#009999;
+		display: flex; 
+	    flex-direction: row; 
+	    justify-content: space-around;
+	    align-items: center;
+	    padding-top: 10px;
+		}
+	.nav{
+	    color: black;
+		font-size: 25px;
+		font-family:'Merriweather',serif;
+		}
+    .nav:hover {
+        font-size: 28px;
+        transition: .4s;
+        }
+
+        /*Drop down bar styling*/	
+    .content{
+        display: none;
+        position:absolute;
+        background-color:  #009999;
+        }
+    .dropdown:hover .content{
+        display:block; 
+        }
+    .content a{
+        color:black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align:left;
+        }
+   .content a:hover{
+        background-color:#f1f1f1;
+        }
+    #cover{
+	    height: 895px; width: 100%;
+		background: url('http://gzhaixier.com/data/out/114/45802434-image-background.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+        }
+    table{
+	    	height: 850px; width: 100%;
+	    }
+		tr{
+			border: 2px solid black;
+		}
+		tr{
+           width: 100%; height: 400px;
+
+		}
+		td{
+			width: 50%;
+			 
+		}
+		#one{
+			border-radius: 100px 0 0 0;
+		}
+		#two{
+			border-radius: 0 100px 0 0;
+		}
+		#three{
+			border-radius: 0 0 0 100px; 
+		}
+		#four{
+			border-radius: 0 0 100px 0;
+		}
+		.datatext{
+			background-color: rgba(0, 0, 0, .7);
+		}
+		#datapic3{
+			width: 100%;
+			height: 445px;
+			border-radius: 0 0 0 100px;
+		}
+		#datapic2{
+			width: 100%;
+			height: 445px;
+			border-radius: 0 100px 0 0;
+
+		}
+		p{
+          color: white;
+          text-align: justify;
+          font-size: 20px;
+          margin-left: 10px;
+          margin-right: 10px;
+          }
+        h2{
+        	 color: white;
+        	 font-size: 30px;
+        }      
+        #footer{
+      height: 50px;
+      width: 100%;
+      background-color: black;
+      color:  #009999;
+      font-size: 22px;
+      display:flex;
+      justify-content: space-around;
+      padding-top: 30px;
+
+      }
+    #footer a{
+        color:  #009999;
+      }                
+         	
+</style>
+</head>
+<body>
+   <center><header id="header">
+   	  The Frick Collection
+   </header></center>
+
+   <center><iframe width="100%" height="400" src="https://www.youtube.com/embed/f41zJ8U2CEo?autoplay=1&playlist=f41zJ8U2CEo" frameborder="0" allowfullscreen></iframe></center>
+
+   <nav>
+   	<a class="nav" href="index.html">Home</a>
+
+   	    <div class="dropdown">
+	<a class="nav" href="#">Museums</a>
+        <div class="content">
+		      <a href="AmericanMuseum.html">American Museum Of Natural Art</a>
+           <a href="FrickCollection.html">The Frick Collection</a>
+           <a href="Metropolitan Museum.html">The Metropolitan Museum of Art</a>
+           <a href="WhitneyMuseum.html">Whitney Museum of American Art</a>
+           <a href="BrooklynMuseum.html">Brooklyn Museum</a>
+        </div>
+    	</div>
+
+   	<a class="nav" href="info.html">Info</a>
+   	
+   </nav>
+
+   <div id="cover">
+   	  <table>
+   	<tr>
+   		<td class="datatext" id="one">
+   			<center>
+   			
+   			<h2>History</h2>
+   			  <p>
+   			  	 Henry Frick started his substantial art collection as soon as he started amassing his fortunes. A considerable amount of his art collection is located in his former residence "Clayton" in Pittsburgh, which is today a part of the Frick Art and Historical Center. Another part was given by his daughter and heiress Helen to the Frick Fine Arts Building, which is on the campus of the University of Pittsburgh.John Russell Pope altered and enlarged the building in the early 1930s to adapt it to use as a public institution. It opened to the public on December 16, 1935.
+
+             Further expansions of the museum took place in 1977 and in 2011. In 2014, the museum announced further expansion plans, but came up against community opposition because it would result in the loss of a garden. The Frick ultimately dropped those plans and is said to be considering other options.
+   			  </p>
+   			</center>
+   		</td>
+   		<td class="data" id="two"><a href="FCdatapic1.jpeg"><img id="datapic2" src="http://si.wsj.net/public/resources/images/BN-FZ168_NYFRIC_J_20141211141258.jpg"></a></td>
+   	</tr>
+   	<tr>
+   		<td class="data" id="three"><a href="FCdatapic2.jpeg"><img id="datapic3" src="https://static01.nyt.com/images/2011/02/18/arts/18REMBRANDT-span/sub-jp-REMBRANDT-jumbo.jpg"></a></td>
+   		<td class="datatext" id="four">
+   			<center><h2>Tourist Attractions</h2>
+            <p>
+            	The Frick is one of the pre-eminent small art museums in the United States, with a high-quality collection of old master paintings and fine furniture housed in six galleries within the former residence. Frick had intended the mansion to eventually become a museum. Many of the paintings are still arranged according to Frick's design. Besides its permanent collection, the Frick has always organized small, focused temporary exhibitions.The collection features some of the best-known paintings by major European artists, as well as numerous works of sculpture and porcelain. It also has 18th century French furniture, Limoges enamel, and Oriental rugs. After Frick's death, his daughter, Helen Clay Frick, expanded the collection, with a third of its artworks acquired since 1919. Although the museum cannot lend the two-thirds that belonged to Frick, as stipulated in his will, the Frick Collection does lend artworks and objects acquired since his death.
+            </p>
+   			</center>
+   		</td>
+   	</tr>
+   </table>
+   </div>
+
+</body>
+<footer>
+  <div id="footer">
+
+  
+  <div><a href="#header">Back To Top</a></div>
+
+  </div>
+</footer>
+</html>

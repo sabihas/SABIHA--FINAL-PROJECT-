@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us-NYC Guide</title>
+	<style type="text/css">
+		header{
+  		width: 100%; 
+  	    height: 500px;
+  		background-image: url('https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers.jpg');
+  		background-size: cover; 
+  	    font-weight: bold;
+  	    font-family: 'Londrina Shadow', cursive;
+  		font-size: 130px; 
+  		text-align: center;
+  		color: black;
+  		text-shadow: 7px 3px 6px #009999; /* horizontal vertical blur-radius*/
+	      }
+	body{
+        margin: 0;
+      /*Leaves no white space around the header and navigation bar*/
+        padding: 0;
+        }
+
+      /* Nav Bar styling */  
+    nav{
+	    width: 100%; height: 100px;
+		background-color: black;
+		display: flex; 
+	    flex-direction: row; /*Items are shown in a row*/
+	    justify-content: space-around;/*creates equal amount of space among the items and spreads them*/
+	    align-items: center; /*align items to the center of the nav bar*/
+		}
+	.nav{
+	    color: #009999;
+		font-size: 25px;
+		font-family:'Merriweather',serif;
+		}
+    .nav:hover {
+        font-size: 28px;
+        transition: .4s;
+        }
+
+        /*Drop down bar styling*/	
+    .content{
+        display: none;
+        position:absolute;
+        background-color:  #009999;
+        }
+    .dropdown:hover .content{
+        display:block; /*When I hover over the contents of the dropdown div, it shows as inline block content; whereas by default it is instructed to display as hidden(none)*/
+        }
+    .content a{
+        color:black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align:left;
+        }
+   .content a:hover{
+        background-color:#f1f1f1;
+        }
+    #footer{
+      height: 50px;
+      width: 100%;
+      background-color: black;
+      color:  #009999;
+      font-size: 22px;
+      display:flex;
+      justify-content: space-around;
+      padding-top: 30px;
+
+      }
+    #footer a{
+        color:  #009999;
+      }
+      h1{
+      	font-size: 45px;
+      	text-decoration: underline;
+      }
+      p{
+      	font-size: 30px;
+      }
+      #form{
+      height: 400px;
+      width: 100%;
+      background:url('https://static.pexels.com/photos/623/flowers-summer-grass-meadow.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      top: 100px;
+      color: white;
+    }
+    input{
+      margin-top: 100px;
+        border: 0;
+        padding: 10px;
+        font-size: 18px;
+        }
+        input[type="submit"]{
+          color: white;
+          background: red;
+          }
+         h1{
+          font-size: 40px;
+         }
+     li{
+      font-size: 30px;
+     }     
+                   
+	</style>
+</head>
+<body>
+    <header id="header">
+   	  Museums Of NYC
+   </header>
+
+   <nav>
+   	<a class="nav" href="index.html">Home</a>
+
+   	    <div class="dropdown">
+	<a class="nav" href="#">Museums</a>
+        <div class="content">
+		   <a href="AmericanMuseum.html">American Museum of Natural History</a>
+           <a href="FrickCollection.html">The Frick Collection</a>
+           <a href="Metropolitan Museum.html">The Metropolitan Museum of Art</a>
+           <a href="WhitneyMuseum.html">Whitney Museum of American Art</a>
+           <a href="BrooklynMuseum.html">Brooklyn Museum</a>
+        </div>
+    	</div>
+
+   	<a class="nav" href="contact.html">Contact</a>
+   	<a class="nav" href="about_us.html">About Us</a>
+   </nav>
+
+   
+   <h1>Contact Us</h1>
+   <p>
+   	You know us already..the obsessive guide to impulsive entertainment—New York City's comprehensive source for arts and entertainment listings. NYC guide online gives you access to full content from the current issues of the magazine, searchable access to hundreds of listings and more than 3,000 restaurant and bar reviews.
+    </br>
+    Have questions or comments? Let us know:
+    If you have trouble using the website e-mail <a href="https://accounts.google.com/Login">nyc_guide@gmail.com</a> 
+    For any questions visit our customer service section.
+    </br>
+    <ul>
+    <li>If you want to advertise in Nyc Guide, contact through our email.</li>
+    <li>If you're interested in working for Nyc Guide, browse our position openings.</li>
+    <li>To send a letter to the editors, write letters.nyc_guide@gmail.com</li>
+    </ul>
+   </p>
+   </br>
+   <h1>About</h1>
+   <p>
+   	At NYC Guide we tell it like it is, without fear or favour. There's a whole world of amazing sights, hotels, travel companies and gear manufacturers out there - and we want to tell you which ones we think are best. But we never compromise our opinions for commercial gain. If you read something written by a NYC Guide author, you can guarantee they've been there, had a look for themselves and are telling you what they really think. It's trusted advice from a trusted source.
+
+
+   </p>
+
+   <div id="form">
+   <center><h1>Subscribe To Our NewsLetter</h1></center>
+    <center><input id="email" type="text" placeholder="Enter Email">
+       <input id="enter" onclick="done()" type="submit"></center>
+   </div>
+</body>
+<script type="text/javascript">
+    
+  function done() {
+    var fill = document.getElementById('enter').value;
+    
+    if (fill === "")
+      {alert("Enter Your Email");
+           }
+      else{
+        alert("Thanks For The Subscription");
+      }     
+
+
+  
+  }
+</script>
+<footer>
+  <div id="footer">
+
+  
+  <div><a href="#header">Back To Top</a></div>
+
+  </div>
+</footer>
+</html>

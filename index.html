@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Museums Of NYC</title>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow|Merriweather" rel="stylesheet">
+<style type="text/css">
+	header{
+  		width: 100%; 
+  	    height: 500px;
+  		background-image: url('https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers.jpg');
+  		background-size: cover; 
+  	    font-weight: bold;
+  	    font-family: 'Londrina Shadow', cursive;
+  		font-size: 130px; 
+  		text-align: center;
+  		color: black;
+  		text-shadow: 7px 3px 6px #009999; /* horizontal vertical blur-radius*/
+	      }
+	body{
+        margin: 0;
+      /*Leaves no white space around the header and navigation bar*/
+        padding: 0;
+        }
+
+      /* Nav Bar styling */  
+    nav{
+	    width: 100%; height: 100px;
+		background-color: black;
+		display: flex; 
+	    flex-direction: row; /*Items are shown in a row*/
+	    justify-content: space-around;/*creates equal amount of space among the items and spreads them*/
+	    align-items: center; /*align items to the center of the nav bar*/
+		}
+	.nav{
+	    color: #009999;
+		font-size: 25px;
+		font-family:'Merriweather',serif;
+		}
+    .nav:hover {
+        font-size: 28px;
+        transition: .4s;
+        }
+
+        /*Drop down bar styling*/	
+    .content{
+        display: none;
+        position:absolute;
+        background-color:  #009999;
+        }
+    .dropdown:hover .content{
+        display:block; /*When I hover over the contents of the dropdown div, it shows as block content; whereas by default it is instructed to display as hidden(none)*/
+        }
+    .content a{
+        color:black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align:left;
+        }
+   .content a:hover{
+        background-color:#f1f1f1;
+        }
+    #space{
+    	background-color:#ffcc00 ;
+    	height: 100px;
+    	width: 100%;
+    	}
+    .icon{
+    	height: 70px;
+    	width: 70px;
+    	
+    	display: inline-block;
+        margin: 15px; /* creates space between the icons*/
+        /*pushes the icons down*/
+        margin-left: 40px;
+        background-color: white;
+        box-shadow: 5px 2px 5px #009999;
+        }
+    .iconpic{
+    	height: 70px;
+    	width: 70px;
+    }    
+    #heading2{
+        font-family:'Droid Serif', serif;
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 15px;  
+    }
+    #background{
+    	  height: 3500px; width: 100%;
+	      background: url('https://static.pexels.com/photos/247/city-cars-vehicles-street.jpg');
+	      background-size: cover;
+	      background-attachment: fixed;
+	      overflow-y: scroll;
+	      
+         }
+    .container{
+        position: relative;
+	    height: 600px;
+		width: 90%;
+		
+		border-radius: 100px 100px 100px 100px;
+		background-color: rgba(0, 0, 0, .5);
+		margin: 100px;
+			
+
+		}
+	#m1p{
+			
+		float: left;
+		margin-left: 25px;
+		margin-top: 45px;
+		height: 500px;
+		width: 40%;
+		border: 2px solid black;
+		border-radius: 100%;
+		box-shadow: 10px 10px 10px rgba(0, 0, 0, .8);
+		}
+	#m1{
+		height: 500px;
+		width: 100%;
+		border-radius: 100%;
+		}
+	#m1t{
+			
+		float: right;
+		margin-right: 30px;
+		margin-top: 45px;
+		height: 520px;
+		width: 50%;
+		border: 2px solid black;
+		border-radius:100px 100px 100px 100px;
+        padding: 0 15px 0 15px;
+		font-size: 20px;
+		color:white;
+    background-color: rgba(0, 0, 0, .7);
+		box-shadow: 10px 10px 10px rgba(0, 0, 0, .7);
+            }
+    p{
+        text-align: justify;            
+        }
+    button{
+    	
+    	background-color: #ffcc00;
+        }
+    #footer{
+      height: 50px;
+      width: 100%;
+      background-color: black;
+      color:  #009999;
+      font-size: 22px;
+      display:flex;
+      justify-content: space-around;
+      padding-top: 30px;
+
+      }
+    #footer a{
+        color:  #009999;
+      }                           
+	</style>
+</head>
+<body>
+   <header id="header">
+   	  Museums Of NYC
+   </header>
+
+   <nav>
+   	<a class="nav" href="index.html">Home</a>
+
+   	    <div class="dropdown">
+	<a class="nav" href="#">Museums</a>
+        <div class="content">
+		   <a href="AmericanMuseum.html">American Museum of Natural History</a>
+           <a href="FrickCollection.html">The Frick Collection</a>
+           <a href="Metropolitan Museum.html">The Metropolitan Museum of Art</a>
+           <a href="WhitneyMuseum.html">Whitney Museum of American Art</a>
+           <a href="BrooklynMuseum.html">Brooklyn Museum</a>
+        </div>
+    	</div>
+
+   	<a class="nav" href="info.html">Info</a>
+   	
+   </nav>
+
+   
+    <p id="heading2">Top 5 Museums of NYC You Must Visit</p>
+   <div id="space">
+        
+   	    <div onclick="Share()" class="icon"><a href="#"><img class="iconpic" src="http://georgecouros.ca/blog/wp-content/uploads/2010/12/share1inch-300x300.png"></a></div>
+   	    <div class="icon"><a href="https://www.facebook.com/"><img class="iconpic" src="http://centerlyne.com/wp-content/uploads/2016/07/logo-facebook.png"></a></div>
+   	    <div class="icon"><a href="https://twitter.com/login"><img class="iconpic" src="http://www.pngall.com/wp-content/uploads/2016/07/Twitter.png"></a></div>
+   	    <div class="icon"><a href="https://www.instagram.com/accounts/login/"><img class="iconpic" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-circle-512.png"></a></div>
+   </div>
+
+   <div id="background">
+   	    <center><div class="container">
+    	<div id="m1p"><a href="m1.jpeg"><img id="m1" src="https://media.timeout.com/images/100616765/image.jpg"></a></div>
+    	<div id="m1t">
+    		<h2>American Museum of Natural History</h2>
+    		<p>The American Museum of Natural History (abbreviated as AMNH), located on the Upper West Side of Manhattan, New York City, is one of the largest museums in the world. Located in park-like grounds across the street from Central Park, the museum complex comprises 28 interconnected buildings housing 45 permanent exhibition halls, in addition to a planetarium and a library. The museum collections contain over 33 million specimens of plants, animals, fossils, minerals, rocks, meteorites, human remains, and human cultural artifacts, of which only a small fraction can be displayed at any given time, and occupies more than 2,000,000 square feet (190,000 m2). The museum has a full-time scientific staff of 225, sponsors over 120 special field expeditions each year, and averages about five million visits annually.
+
+        The one mission statement of the American Museum of Natural History is: "To discover, interpret, and disseminate—through scientific research and education—knowledge about human cultures, the natural world, and the universe."</p>
+        <button onclick="like()">Like</button>
+    	</div>
+        </div></center>
+
+    <!-- this is a repeated form -->
+        <center><div class="container">
+    	<div id="m1p"><a href="m2.jpeg"><img id="m1" src="http://www.americancities.ru/f/gallery/originWM_frick_Collection.jpg"></a></div>
+    	<div id="m1t">
+    		<h2>The Frick Collection</h2>
+    		<p>Henry Frick started his substantial art collection as soon as he started amassing his fortunes. A considerable amount of his art collection is located in his former residence "Clayton" in Pittsburgh, which is today a part of the Frick Art and Historical Center. Another part was given by his daughter and heiress Helen to the Frick Fine Arts Building, which is on the campus of the University of Pittsburgh.
+        After Adelaide Frick died in 1931, the conversion of the house into a public museum started.
+
+            John Russell Pope altered and enlarged the building in the early 1930s to adapt it to use as a public institution. It opened to the public on December 16, 1935.Further expansions of the museum took place in 1977 and in 2011. In 2014, the museum announced further expansion plans, but came up against community opposition because it would result in the loss of a garden. The Frick ultimately dropped those plans and is said to be considering other options.</p>
+            <button onclick="like()">Like</button>
+    	</div>
+        </div></center>
+
+    <!-- this is a repeated form -->
+         <center><div class="container">
+    	<div id="m1p"><a href="m3.jpeg"><img id="m1" src="http://www.grandlifehotels.com/wp-content/uploads/2011/08/metropolitan.jpg"></a></div>
+    	<div id="m1t">
+    		<h2>The Metropolitan Museum of Art</h2>
+    		    <p>The Metropolitan Museum of Art, colloquially "the Met" is located in New York City and is the largest art museum in the United States. It is among the most visited art museums in the world. Its permanent collection contains over two million works,divided among seventeen curatorial departments. The main building, on the eastern edge of Central Park along Manhattan's Museum Mile, is by area one of the world's largest art galleries. A much smaller second location, The Cloisters at Fort Tryon Park in Upper Manhattan, contains an extensive collection of art, architecture, and artifacts from Medieval Europe. On March 18, 2016, the museum opened the Met Breuer museum at Madison Avenue in the Upper East Side; it extends the museum's modern and contemporary art program.
+
+            The Metropolitan Museum of Art was founded in 1870. The founders included businessmen and financiers, as well as leading artists and thinkers of the day, who wanted to open a museum to bring art and art education to the American people.[3] It opened on February 20, 1872, and was originally located at 681 Fifth Avenue.</p>
+            <button onclick="like()">Like</button> 
+    	</div>
+        </div></center>
+
+    <!-- this is a repeated form -->
+        <center><div class="container">
+    	<div id="m1p"><a href="m4.jpeg"><img id="m1" src="http://whitney.org/file_columns/0011/1650/658.049_forweb.jpg"></a></div>
+    	<div id="m1t">
+    		<h2>Whitney Museum of American Art</h2>
+    		<p>The Whitney Museum of American Art, known informally as the "Whitney" – is an art museum located in Manhattan. It was founded in 1931 by Gertrude Vanderbilt Whitney (1875–1942), a wealthy and prominent American socialite and art patron after whom the museum is named.
+
+            The Whitney focuses on 20th- and 21st-century American art. Its permanent collection comprises more than 21,000 paintings, sculptures, drawings, prints, photographs, films, videos, and artifacts of new media by more than 3,000 artists. The museum's Annual and Biennial exhibitions have long been a venue for younger and less well-known artists whose work is showcased there.
+
+            From 1966 to 2014, the Whitney was located at 945 Madison Avenue at East 75th Street in Manhattan's Upper East Side. The museum closed in October 2014 to relocate to a new building designed by Renzo Piano located at 99 Gansevoort Street at Washington Street in the West Village/Meatpacking District neighborhoods of Lower Manhattan; it reopened at the new location on May 1, 2015.</p>
+            <button onclick="like()">Like</button>
+    	</div>
+         </div></center>
+
+    <!-- this is a repeated form -->
+        <center><div class="container">
+    	<div id="m1p"><a href="m5.jpeg"><img id="m1" src="https://www.jimcutler.com/wp-content/uploads/2015/01/Brooklyn_Museum_Great_Hall_1000pxjimcutler.jpg"></a></div>
+    	<div id="m1t">
+    		<h2>Brooklyn Museum</h2>
+    		<p>The Brooklyn Museum is an art museum located in the New York City borough of Brooklyn. At 560,000 square feet (52,000 m2), the museum is New York City's third largest in physical size and holds an art collection with roughly 1.5 million works.
+
+            Located near the Prospect Heights, Crown Heights, Flatbush, and Park Slope neighborhoods of Brooklyn and founded in 1895, the Beaux-Arts building, designed by McKim, Mead and White, was planned to be the largest art museum in the world. The museum initially struggled to maintain its building and collection, only to be revitalized in the late 20th century, thanks to major renovations. Significant areas of the collection include antiquities, specifically their collection of Egyptian antiquities spanning over 3,000 years. African, Oceanic, and Japanese art make for notable antiquities collections as well.Artists represented in the collection include Mark Rothko, Edward Hopper, Norman Rockwell, Winslow Homer, Edgar Degas, Georgia O'Keeffe, and Max Weber. The museum also has a "Memorial Sculpture Garden" which features salvaged architectural elements from throughout New York City.</p>
+            <button onclick="like()">Like</button>
+    	</div>
+    </div></center>
+   </div>
+</body>
+<footer>
+  <div id="footer">
+
+  
+  <div><a href="#header">Back To Top</a></div>
+
+  </div>
+</footer>
+<script type="text/javascript">
+	function Share() {
+    alert("Thank You For Sharing Our Page");
+  }
+  function like() {
+    alert("Thank You For Liking Our Page");
+  }
+</script>
+</html>
